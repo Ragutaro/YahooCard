@@ -1,0 +1,49 @@
+object frmGetData: TfrmGetData
+  Left = 322
+  Top = 429
+  BorderStyle = bsDialog
+  Caption = #21033#29992#12487#12540#12479#12398#21462#24471
+  ClientHeight = 204
+  ClientWidth = 242
+  Color = clBtnFace
+  Font.Charset = SHIFTJIS_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #12513#12452#12522#12458
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  Visible = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 18
+  object lblInfo: TLabel
+    Left = 13
+    Top = 175
+    Width = 134
+    Height = 18
+    AutoSize = False
+  end
+  object btnGet: TButton
+    Left = 153
+    Top = 171
+    Width = 75
+    Height = 25
+    Caption = #21462#24471
+    TabOrder = 0
+    OnClick = btnGetClick
+  end
+  object MonthCalendar: TMonthCalendar
+    Left = 0
+    Top = 0
+    Width = 242
+    Height = 170
+    Align = alTop
+    Date = 42666.509676516200000000
+    MaxDate = 44196.999988425930000000
+    ShowToday = False
+    ShowTodayCircle = False
+    TabOrder = 1
+  end
+end

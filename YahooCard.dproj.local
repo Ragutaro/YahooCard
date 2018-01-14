@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/26 00:01:48.000.910,=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/18 16:24:03.000.391,=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/18 16:24:12.000.895,=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\MyForm.pas</Transaction>
+    <Transaction>2016/10/18 16:24:53.000.235,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Main.pas=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\MyForm.pas</Transaction>
+    <Transaction>2016/10/18 16:24:53.000.235,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Main.dfm=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\MyForm.dfm</Transaction>
+    <Transaction>2016/10/18 16:25:25.000.407,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\YahooCard.dproj=C:\Users\ragu\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/10/22 13:23:07.000.223,=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/10/22 13:23:38.000.133,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\GetData.pas=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/10/22 13:23:38.000.133,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\GetData.dfm=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.dfm</Transaction>
+    <Transaction>2016/10/24 19:00:22.000.399,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\GetData.pas=</Transaction>
+    <Transaction>2016/11/13 11:44:36.000.333,=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/11/13 11:45:35.000.426,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Graph.dfm=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.dfm</Transaction>
+    <Transaction>2016/11/13 11:45:35.000.426,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Graph.pas=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/11/25 11:38:25.000.596,=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/11/25 11:39:30.000.125,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Detail.dfm=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.dfm</Transaction>
+    <Transaction>2016/11/25 11:39:30.000.125,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Detail.pas=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm.pas</Transaction>
+    <Transaction>2016/11/26 11:00:40.000.163,=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Unit1.pas</Transaction>
+    <Transaction>2016/11/26 11:06:01.000.457,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Utils.pas=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\Unit1.pas</Transaction>
+    <Transaction>2017/09/03 16:52:32.000.331,=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm_Unicode.pas</Transaction>
+    <Transaction>2017/09/03 16:53:11.000.213,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm_Unicode.dfm=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\ThisMonth.dfm</Transaction>
+    <Transaction>2017/09/03 16:53:11.000.213,C:\!MyData\MyBetaSoftware\Seattle\YahooCard\MyForm_Unicode.pas=C:\!MyData\MyBetaSoftware\Seattle\YahooCard\ThisMonth.pas</Transaction>
+  </Transactions>
+</BorlandProject>
