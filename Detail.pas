@@ -213,8 +213,7 @@ end;
 procedure TfrmDetail.lvwAllItemCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  DrawListItemBkColor(Sender, Item, State);
+  lvwAllItem.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmDetail.lvwAllItemKeyUp(Sender: TObject; var Key: Word;
@@ -257,8 +256,7 @@ end;
 procedure TfrmDetail.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  DrawListItemBkColor(Sender, Item, State);
+  lvwList.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmDetail.lvwListSelectItem(Sender: TObject; Item: TListItem;
@@ -306,6 +304,7 @@ begin
   lblDate.Caption := sDate;
   lblShop.Caption := sShop;
   lblAmount.Caption := sAmount;
+  edtPrice.Text := sAmount;
   //入力済みのデータを読み込む
   sFile := ut_CreateDetailFilePath(sDate);
   _LoadDetailToLvwList(sFile, sDate, sShop, sAmount);

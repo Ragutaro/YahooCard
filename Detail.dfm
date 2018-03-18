@@ -44,6 +44,9 @@ object frmDetail: TfrmDetail
         Width = 75
       end>
     HideSelection = False
+    HotTrackStyles = [htHandPoint, htUnderlineHot]
+    ReadOnly = True
+    RowSelect = True
     TabOrder = 0
     ViewStyle = vsReport
     OnCustomDrawItem = lvwAllItemCustomDrawItem
@@ -52,6 +55,10 @@ object frmDetail: TfrmDetail
     SortOrder = soAscending
     WrapAround = False
     DefaultSortOrder = soAscending
+    HoverColor = 16774117
+    HoverFontColor = clTeal
+    UnevenColor = 16710392
+    EvenColor = clWindow
   end
   object panRight: TPanel
     Left = 153
@@ -83,6 +90,9 @@ object frmDetail: TfrmDetail
           Width = 75
         end>
       HideSelection = False
+      HotTrackStyles = [htHandPoint, htUnderlineHot]
+      ReadOnly = True
+      RowSelect = True
       TabOrder = 0
       ViewStyle = vsReport
       OnCustomDrawItem = lvwListCustomDrawItem
@@ -90,6 +100,10 @@ object frmDetail: TfrmDetail
       SortOrder = soAscending
       WrapAround = False
       DefaultSortOrder = soAscending
+      HoverColor = 16774117
+      HoverFontColor = clTeal
+      UnevenColor = 16710392
+      EvenColor = clWindow
     end
     object panEdit: TPanel
       Left = 0

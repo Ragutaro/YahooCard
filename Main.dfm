@@ -119,6 +119,10 @@ object frmMain: TfrmMain
         SortOrder = soAscending
         WrapAround = False
         DefaultSortOrder = soAscending
+        HoverColor = 16774117
+        HoverFontColor = clTeal
+        UnevenColor = 16710392
+        EvenColor = clWindow
       end
       object panMonthlyGoods: TPanel
         Left = 0
@@ -157,6 +161,9 @@ object frmMain: TfrmMain
               Caption = #20385#26684
             end>
           ColumnClick = False
+          HotTrackStyles = [htHandPoint, htUnderlineHot]
+          ReadOnly = True
+          RowSelect = True
           PopupMenu = popDetail
           TabOrder = 0
           ViewStyle = vsReport
@@ -164,6 +171,10 @@ object frmMain: TfrmMain
           SortOrder = soAscending
           WrapAround = False
           DefaultSortOrder = soAscending
+          HoverColor = 16774117
+          HoverFontColor = clTeal
+          UnevenColor = 16710392
+          EvenColor = clWindow
         end
         object lvwPayment: THideListView
           Left = 0
@@ -206,6 +217,10 @@ object frmMain: TfrmMain
           SortOrder = soAscending
           WrapAround = False
           DefaultSortOrder = soAscending
+          HoverColor = 16774117
+          HoverFontColor = clTeal
+          UnevenColor = 16710392
+          EvenColor = clWindow
         end
       end
     end
@@ -276,6 +291,10 @@ object frmMain: TfrmMain
       SortOrder = soAscending
       WrapAround = False
       DefaultSortOrder = soAscending
+      HoverColor = 16774117
+      HoverFontColor = clTeal
+      UnevenColor = 16710392
+      EvenColor = clWindow
     end
   end
   object panInfo: TPanel

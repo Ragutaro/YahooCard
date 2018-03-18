@@ -80,12 +80,12 @@ type
     procedure lvwGoodsCustomDrawItem(Sender: TCustomListView; Item: TListItem;
       State: TCustomDrawState; var DefaultDraw: Boolean);
     procedure popDetail_ShowHeaderClick(Sender: TObject);
-    procedure tvwMonthCustomDrawItem(Sender: TCustomTreeView; Node: TTreeNode;
-      State: TCustomDrawState; var DefaultDraw: Boolean);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure FormShow(Sender: TObject);
     procedure timLoadedTimer(Sender: TObject);
     procedure popShowThisMonthClick(Sender: TObject);
+    procedure tvwMonthCustomDrawItem(Sender: TCustomTreeView; Node: TTreeNode;
+      State: TCustomDrawState; var DefaultDraw: Boolean);
   private
     { Private 宣言 }
     procedure _LoadSettings;
@@ -263,9 +263,7 @@ end;
 procedure TfrmMain.lvwPaymentCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  DrawListItemBkColor(Sender, Item, State);
-
+  lvwPayment.ColorizeLines(Item, State, DefaultDraw);
   if Item.Caption = '合計額' then
   begin
     with Sender.Canvas do
@@ -305,8 +303,7 @@ end;
 procedure TfrmMain.lvwGoodsCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  DrawListItemBkColor(Sender, Item, State);
+  lvwGoods.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmMain.lvwListColumnClick(Sender: TObject; Column: TListColumn);
@@ -320,18 +317,7 @@ end;
 procedure TfrmMain.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-
-  with Sender.Canvas do
-  begin
-    Brush.Style := bsSolid;
-    if cdsHot in State then
-    begin
-      Brush.Color := clHover;
-      Font.Color  := clWindowText;
-      Font.Style  := [fsUnderline];
-    end;
-  end;
+  lvwList.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmMain.lvwMonthlyColumnClick(Sender: TObject; Column: TListColumn);
@@ -362,9 +348,7 @@ end;
 procedure TfrmMain.lvwMonthlyCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  DrawListItemBkColor(Sender, Item, State);
-
+  lvwMonthly.ColorizeLines(Item, State, DefaultDraw);
   if (Item.Caption = '今月の合計') or (Item.Caption = '今日の合計') then
   begin
     with lvwMonthly.Canvas do
@@ -473,17 +457,7 @@ end;
 procedure TfrmMain.tvwMonthCustomDrawItem(Sender: TCustomTreeView;
   Node: TTreeNode; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  with Sender.Canvas do
-  begin
-    if cdsHot in State then
-    begin
-      Brush.Style := bsSolid;
-      Brush.Color := clHover;
-      Font.Color  := clWindowText;
-      Font.Style  := [fsUnderline];
-    end;
-  end;
+  tvwMonth.ColorizeNodes(Node, State, DefaultDraw, [fsUnderline]);
 end;
 
 procedure TfrmMain.tvwMonthKeyUp(Sender: TObject; var Key: Word;
